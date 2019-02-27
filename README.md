@@ -1,64 +1,68 @@
-# "Hackathon" de final de _Common Core_, películas
+# [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
 
-## Índice
+[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
 
-- [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Parte obligatoria](#parte-obligatoria)
-- [Consideraciones técnicas](#consideraciones-técnicas)
+## Preview
 
----
+[![Freelancer Preview](https://startbootstrap.com/assets/img/screenshots/themes/freelancer.png)](https://blackrockdigital.github.io/startbootstrap-freelancer/)
 
-## Preámbulo
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-freelancer/)**
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix o
-Amazon Prime Video, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas... ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+## Status
 
-![Pelis](https://media.giphy.com/media/NipFetnQOuKhW/giphy.gif)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-freelancer/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-freelancer)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-freelancer?type=dev)
 
-## Resumen del proyecto
+## Download and Installation
 
-Durante estos días crearás el producto que quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en algún servicio de streaming, uno de recomendaciones de películas de terror,
-comedia ... o... ¡lo que quieran!
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/freelancer/)
+* Install via npm: `npm i startbootstrap-freelancer`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-freelancer)
 
-## Consideraciones generales
+## Usage
 
-- Este proyecto se debe resolver en equipos de hasta 4 personas.
-- Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-- Tiempo para completar el reto: 3 días.
-- Habrán dos presentaciones, una a la mitad de la _hackathon_ y otra al final.
+### Basic Usage
 
-## Objetivos de aprendizaje
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-- Enfrentarte a un reto de corta duración en el que pongas
-  en práctica todo lo aprendido hasta ahora.
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
+### Advanced Usage
 
-## Parte Obligatoria
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada una en el
-  proyecto.
-- El producto deberá presentarse publicado en github pages.
+#### Gulp Tasks
 
-## Consideraciones técnicas
+- `gulp` the default task that builds everything
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-- El diseño visual de los componentes es de libre elección.
-- Pueden usar algún framework de css si así lo deciden.
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-## Sobre las presentaciones
+## Bugs and Issues
 
-- Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
 
-- Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
+
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
