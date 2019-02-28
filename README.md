@@ -63,11 +63,56 @@ comedia ... o... ¡lo que quieran!
 - Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
 
 - Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
+--- 
 
 ## UX
 
-- Primera fase del proceso:
-![Investigación](./img/investigacion.jpg)
+- INVESTIGACIÓN:
+
+
+Preámbulo.
+
+
+Dentro del ajetreado estilo de vida que llevamos el día de hoy, es impensable perder valiosos minutos buscando la película que deseas ver como medio de distracción. Es por ello que hemos creado "Top Movies". Una aplicación que te ayuda a elegir de una manera más rápida y sencilla la película de tu interés.
+
+*Pantallaso de la aplicación.
+
+
+- Encuestas.
+
+
+![Encuestas-Personales](./img/Encuestas-pers.jpg)
+
+
+![Encuesta](./img/Encuesta.png)
+
+
+![Encuesta](./img/Encuesta1.png)
+
+
+![Encuesta](./img/Encuesta2.png)
+
+
+![Encuesta](./img/Encuesta3.png)
+
+
+![Encuesta](./img/Encuesta4.png)
+
+
+![Encuesta](./img/Encuesta5.png)
+
+
+![Encuesta](./img/Encuesta6.png)
+
+
+![Encuesta](./img/Encuesta7.png)
+
+
+
+- Historias de Usario.
+![Historia-de-Usuario1](./img/HistoriaU1.jpg)
+![Historia-de-Usuario1](./img/HistoriaU2.jpg)
+
 
 - Prototipado de Baja fidelidad:
 ![Prototipado](./img/Prototipo-baja.jpg)
