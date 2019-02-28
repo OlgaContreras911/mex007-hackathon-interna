@@ -1,6 +1,6 @@
 let movieData = [];
 const tajetas= document.getElementById('tarjetas');
-
+const selector= document.getElementById('genre');
 
 const arrayMovies = ["tt1918886","tt4154796","tt4154664","tt6806448", "tt0197521","tt6450804","tt1620981","tt3038708", "tt1979376","tt6565702"]
 for(i=0;i<arrayMovies.length;i++){
@@ -12,14 +12,14 @@ for(i=0;i<arrayMovies.length;i++){
         printMovies(movieData)
         
     })
+    
 
     // .then (data => localStorage.setItem('data', JSON.stringify(movieDatas)))
     .catch(err => (err))
 }
 
 const printMovies = (movieData) => {
-    const tarjetas2 = tarjetas;
-    tarjetas2.innerHTML="";
+   tarjetas.innerHTML="";
     movieData.forEach(element => {
       let infMovie = `<div class="casilla">
      <h6>${element.Title.toUpperCase()}</h6>
@@ -28,7 +28,15 @@ const printMovies = (movieData) => {
      <p>Plot: ${element.Plot}</p>
      <p>Actors: ${element.Actors}</p>
      <p>Country: ${element.Country}</p></button>`;
-      tarjetas2.insertAdjacentHTML("beforeend", infMovie);
+      tarjetas.insertAdjacentHTML("beforeend", infMovie);
       
     });
    };
+   const select = () => {
+    //tarjetas.innerHTML = '';
+    let typeGenre = select.value;
+    const forGenre = window.movies.filterData(typeGenre, movieData);
+    printMovies(forGenre)
+    //return typeGenre;
+  }
+  selector.addEventListener('change', select)
