@@ -8,6 +8,7 @@
 - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
 - [Parte obligatoria](#parte-obligatoria)
 - [Consideraciones técnicas](#consideraciones-técnicas)
+- [UX](#UX)
 
 ---
 
