@@ -1,5 +1,7 @@
 let movieData = [];
 const tajetas= document.getElementById('tarjetas');
+const search= document.getElementById('search');
+const selector=document.getElementById('genre').value;
 
 
 const arrayMovies = ["tt1918886","tt4154796","tt4154664","tt6806448", "tt0197521","tt6450804","tt1620981","tt3038708", "tt1979376","tt6565702"]
@@ -32,3 +34,21 @@ const printMovies = (movieData) => {
       
     });
    };
+
+   const select = () => {
+    tarjetas.innerHTML = '';
+    let typeGenre = select.taget.value;
+    const forGenre = window.movies.filterData(selector, movieData);
+    printMovies(forGenre)
+    return typeGenre;
+  }
+  selector.addEventListener('change', select)
+
+  search.addEventListener('keyup', () => {
+    tarjetas.innerHTML = '';
+    let nMovie = search.value;
+    let filterTitle = window.movies.filterTitle(nMovie, movieData);
+    printMovies(filterTitle)
+    return nMovie;
+  })
+  
