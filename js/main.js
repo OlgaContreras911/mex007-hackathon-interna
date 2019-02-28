@@ -13,7 +13,7 @@ for(i=0;i<arrayMovies.length;i++){
         
     })
 
-    // .then (data => localStorage.setItem('data', JSON.stringify(movieData)))
+    // .then (data => localStorage.setItem('data', JSON.stringify(movieDatas)))
     .catch(err => (err))
 }
 
