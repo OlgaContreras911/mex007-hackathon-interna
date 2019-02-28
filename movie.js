@@ -1,1 +1,0 @@
-//Aquí van la variable global WINDOW, funciones puras para testear 
