@@ -42,9 +42,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <input type="text" name="search" placeholder="title" id="search">
+          <li class="nav-item mx-0 mx-lg-1">
+            <label for="search">SEARCH</label>
+            <input type="text" name="search" placeholder="Title" id="search">
           </li>
-          <select  id="genre">
+          <select class="custom-select nav-item mx-0 mx-lg-1" id="genre">
             <option value="" disabled selected>GENRE</option>
             <option value="Sci-Fi">Sci-Fi</option>
             <option value="Comedy">Comedy</option>
@@ -58,8 +60,8 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Comedia</a>
            </li>--> 
           <li class="nav-item mx-0 mx-lg-1">
-              <a type="button" id="logIn" href="login.html" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" >Log In</a>
-            <a type="button" id="logOut" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" >Log Out</a>
+              <a  id="logIn" href="login.html" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" >Log In</a>
+            
           </li>
           
         </ul>
@@ -69,7 +71,7 @@
 
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
-    <h1>TOP 10 </h1>
+    <h1>Top 10 de películas de estreno</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -100,11 +102,10 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <h1 class="fontawesome-free mb-1">Lista de las mejores películas de estreno </h1>
-
-    <h2 class="font-weight-light mb-9"> No pierdas tiempo en elegir </h2>
+    <h1 class="text-uppercase mb-0"></h1>
+    <hr class="star-light">
+    <h2 class="font-weight-light mb-0">Ingresa y descubre más contenido!</h2>
     </div>
-
   </header>
   <!-- carrusel -->
 
@@ -183,17 +184,15 @@
   <!-- About Section -->
   <section class="bg-primary text-white mb-0" id="about">
     <div class="container">
-      <h2 class="text-center text-uppercase text-white">About</h2>
+      <h2 class="text-center text-uppercase text-white">About us</h2>
       <hr class="star-light mb-5">
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
-            customization.</p>
+          <p class="lead">Top Movie es una app web que distingue las categorías más vistas por nuestros usuarios.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract
-            clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          <p class="lead">Clasificamos por género de películas, y buscamos los mejores estrenos para nuestro usuario.
+          </p>
         </div>
       </div>
       <div class="text-center mt-4">
@@ -204,16 +203,15 @@
       </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
+  <!-- Contact Section 
   <section id="contact">
     <div class="container">
       <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
       <hr class="star-dark mb-5">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+          To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. 
+          The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -256,7 +254,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -264,11 +262,11 @@
       <div class="row">
         <div class="col-md-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+          <p class="lead mb-0">Tonala 10
+            <br>Roma Norte, 06700</p>
         </div>
         <div class="col-md-4 mb-5 mb-lg-0">
-          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <h4 class="text-uppercase mb-4">Follow Us</h4>
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
@@ -298,9 +296,9 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+          <h4 class="text-uppercase mb-4">Hackatón</h4>
+          <p class="lead mb-0">Realizado en Laboratoria
+              <a href="https://github.com/OlgaContreras911/mex007-hackathon-interna">Repositorio en GitHub</a>.</p>
         </div>
       </div>
     </div>
@@ -308,7 +306,7 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+      <small>Copyright &copy; Top Movies 2019 </small>
     </div>
   </div>
 
