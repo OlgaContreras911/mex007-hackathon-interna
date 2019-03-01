@@ -63,10 +63,13 @@ comedia ... o... ¡lo que quieran!
 - Cada squad tendrá 5 minutos para presentar y 5 minutos para recibir preguntas.
 
 - Las personas que presentan en la primera presentación no deben ser las mismas de la presentación final.
---- 
 
 ## UX
 
+<<<<<<< HEAD
+- Primera fase del proceso:
+![Investigación](./img/investigacion.jpg)
+=======
 - INVESTIGACIÓN:
 
 
@@ -126,6 +129,7 @@ Dentro del ajetreado estilo de vida que llevamos el día de hoy, es impensable p
 - PROCESO DE DISEÑO
 
 
+>>>>>>> origin/master
 
 - Prototipado de Baja fidelidad:
 ![Prototipado](./img/Prototipo-baja.jpg)
