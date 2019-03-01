@@ -114,7 +114,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav {
-    margin-top: 1rem;
+    margin-top: 3%;
     letter-spacing: .0625rem
 }
 
@@ -181,33 +181,39 @@ section h2 {
 }
 
 header.masthead {
-    padding-top: calc(2rem + 72px);
-    padding-bottom: 6rem
+    padding-top: calc(3% + 72px);
+    padding-bottom: 3%;
 }
 
 header.masthead h1 {
-    font-size: 3rem;
-    line-height: 3rem
+    font-size: 5rem;
+    line-height: inherit;
 }
 
 header.masthead h2 {
-    font-size: 1.3rem;
-    font-family: Lato
+    font-size: 2rem;
+    font-family: Lato;
+    line-height: 2.6rem;
+    margin-top: 4rem;
 }
 
 @media (min-width:992px) {
     header.masthead {
         padding-top: calc(8rem + 200px);
-        padding-bottom: 10rem
+        padding-bottom: 10rem;
     }
 
     header.masthead h1 {
         font-size: 4.75em;
-        line-height: 4rem
+        line-height: 4rem;
+        margin-top: 5rem;
     }
 
     header.masthead h2 {
-        font-size: 1.75em
+        font-size: 1.75em;
+        font-family: Lato;
+        margin-top: 5rem;
+
     }
 }
 
