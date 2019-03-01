@@ -25,20 +25,30 @@ for(i=0;i<arrayMovies.length;i++){
 }
 
 const printMovies = (movieData) => {
-   tarjetas.innerHTML="";
-    movieData.forEach(element => {
-      let infMovie = `<div class="col-md-6 col-lg-4">
-     <h6>${element.Title.toUpperCase()}</h6>
-     <img src="${element.Poster}" class="img-Poster">
-     <p>Genre: ${element.Genre}</p>
-     <p>Plot: ${element.Plot}</p>
-     <p>Actors: ${element.Actors}</p>
-     <p>Director: ${element.Director}</p>
-     <p>Country: ${element.Country}</p></button>`;
-      tarjetas.insertAdjacentHTML("beforeend", infMovie);
-      
-    });
-   };
+  tarjetas.innerHTML="";
+   movieData.forEach(element => {
+     let infMovie = `<div class="container">
+     <h2 class="text-center text-uppercase text-secondary mb-0">${element.Title.toUpperCase()}</h2>
+     <div class="row">
+       <div class="col-md-6 col-lg-4">
+         <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+           <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+             </div>
+           </div>
+           <img class="img-fluid" src="${element.Poster}" alt="modal1">
+        <p>Genre:${element.Genre}</p>
+        <p>Plot: ${element.Plot}</p>
+        <p>Actors: ${element.Actors}</p>
+        <p>Country: ${element.Country}</p>
+         </a>
+       </div>
+     </div>
+   </div>`;
+     tarjetas.insertAdjacentHTML("beforeend", infMovie);
+     
+   });
+  };
   selector.addEventListener('change',()=> {
     
     let typeGenre = event.target.value;
