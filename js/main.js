@@ -1,10 +1,8 @@
 let movieData = [];
 const tajetas= document.getElementById('tarjetas');
-const search= document.getElementById('search');
-const selector=document.getElementById('genre').value;
-
-
-const arrayMovies = ["tt1918886","tt4154796","tt4154664","tt6806448", "tt0197521","tt6450804","tt1620981","tt3038708", "tt1979376","tt6565702"]
+const selector= document.getElementById('genre');
+const search = document.getElementById('search');
+const arrayMovies = ["tt7286456","tt4154796","tt4154664","tt6806448", "tt0197521","tt6450804","tt1620981","tt3038708", "tt1979376","tt6565702","tt0837563","tt5598292","tt3387520"]
 for(i=0;i<arrayMovies.length;i++){
     const url= "https://www.omdbapi.com/?i=" + arrayMovies[i] + "&apikey=9d28f170";
     fetch (url)
@@ -14,41 +12,49 @@ for(i=0;i<arrayMovies.length;i++){
         printMovies(movieData)
         
     })
+    
 
-    // .then (data => localStorage.setItem('data', JSON.stringify(movieDatas)))
+    // .then (data => localStorage.setItem('data', JSON.stringify(movieData)))
     .catch(err => (err))
 }
 
 const printMovies = (movieData) => {
-    const tarjetas2 = tarjetas;
-    tarjetas2.innerHTML="";
+   tarjetas.innerHTML="";
     movieData.forEach(element => {
-      let infMovie = `<div class="casilla">
-     <h6>${element.Title.toUpperCase()}</h6>
-     <img src="${element.Poster}" class="img-Poster">
-     <p>Genre: ${element.Genre}</p>
-     <p>Plot: ${element.Plot}</p>
-     <p>Actors: ${element.Actors}</p>
-     <p>Country: ${element.Country}</p></button>`;
-      tarjetas2.insertAdjacentHTML("beforeend", infMovie);
+      let infMovie = `<div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">${element.Title.toUpperCase()}</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="${element.Poster}" alt="modal1">
+          </a>
+        </div>
+      </div>
+    </div>`;
+      tarjetas.insertAdjacentHTML("beforeend", infMovie);
       
     });
    };
-
-   const select = () => {
-    tarjetas.innerHTML = '';
-    let typeGenre = select.taget.value;
-    const forGenre = window.movies.filterData(selector, movieData);
+  selector.addEventListener('change',()=> {
+    
+    let typeGenre = event.target.value;
+    const forGenre = window.movies.filterData(typeGenre, movieData);
     printMovies(forGenre)
     return typeGenre;
-  }
-  selector.addEventListener('change', select)
-
-  search.addEventListener('keyup', () => {
-    tarjetas.innerHTML = '';
-    let nMovie = search.value;
-    let filterTitle = window.movies.filterTitle(nMovie, movieData);
-    printMovies(filterTitle)
-    return nMovie;
+  })
+ 
+  search.addEventListener('keyup', ()=>{
+tarjetas.innerHTML= "";
+let nMovie =search.value;
+let filterTitle=window.movies.filterTitle(nMovie, movieData);
+printMovies(filterTitle);
+return nMovie;
   })
   
+  
+ 
