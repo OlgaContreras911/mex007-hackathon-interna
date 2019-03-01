@@ -111,8 +111,28 @@ Dentro del ajetreado estilo de vida que llevamos el día de hoy, es impensable p
 
 - Historias de Usario.
 ![Historia-de-Usuario1](./img/HistoriaU1.jpg)
-![Historia-de-Usuario1](./img/HistoriaU2.jpg)
+- Escenario 1 - Visualización de Estrenos. En caso que el usuario busque visualizar los estrenos de película y adicionalmente busque una sinopsis de la misma, cuando otras aplicaciones no le dejen obtenerla de manera adecuada, nuestra aplicación debe facilitarle la obtención de lo que nuestro usuario esta buscando.
+
+![Historia-de-Usuario2](./img/HistoriaU2.jpg)
+![Historia-de-Usuario3](./img/HistoriaU3.jpg)
+![Historia-de-Usuario4](./img/HistoriaU4.jpg)
+
+
+- Perfil de Usuario.
+![Perfil-de-Usuario](./img/PerfilUsuario.jpg)
+
+---
+
+- PROCESO DE DISEÑO
+
 
 
 - Prototipado de Baja fidelidad:
 ![Prototipado](./img/Prototipo-baja.jpg)
+
+- Prototipado de Alta fidelidad:
+
+![Inicio](./img/Pantalla-Inicio.png)
+![Menu](./img/menu.png)
+![Visualizar](./img/visualizacion.png)
+![Detalle](./img/detalle.png)
