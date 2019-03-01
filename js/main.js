@@ -21,7 +21,7 @@ const printMovies = (movieData) => {
     const tarjetas2 = tarjetas;
     tarjetas2.innerHTML="";
     movieData.forEach(element => {
-      let infMovie = `<div class="casilla">
+      let infMovie = `<div class="col-md-6 col-lg-4">
      <h6>${element.Title.toUpperCase()}</h6>
      <img src="${element.Poster}" class="img-Poster">
      <p>Genre: ${element.Genre}</p>
